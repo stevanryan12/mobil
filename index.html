@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile-nav</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-link">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#fff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#ff3366;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+
+                    <polygon points="50,10 20,50 50,90 80,50" fill="none" stroke="url(#logoGrad)" stroke-width="3" />
+                    <circle cx="50" cy="50" r="5" fill="url(#logoGrad)" />
+                </svg>
+                <span class="logo-text">OtoBrand.id</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#collections" class="nav-link">Collections</a></li>
+                <li><a href="#featured" class="nav-link">Mitsubishi</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-cta">Get In Touch</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav" id="mobileNav">
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="hero-badge">iOtoBrandd</div>
+
+                <h1 class="hero-title">
+                    <span class="line"><span>RIDE</span></span>
+                    <span class="line">THE <spanTHE span class="accent">LIFE</spanTHE></span></span>
+                    <span class="line"><span>ADVENTURE</span></span>
+                </h1>
+                <p class="hero-description">
+                    Drive your Ambition with Mitsubishi
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">1.500+</span>
+
+                        <span class="stat-label">Happy Mitsubishi Owners</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24H</span>
+                        <span class="stat-label">Emergency Service Support</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99%</span>
+                        <span class="stat-label">Performance & Reliability Rate</span>
+                    </div>
+                </div>
+
+                <div class="cta-group">
+                    <a href="#collections" class="cta-button primary">produk</a>
+                    <a href="#featured" class="cta-button outline">Mitsubishi</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-image-wrapper">
+                    <div class="hero-carousel">
+                        <div class="carousel-slide active">
+                            <img src="images/gedung/gedung_1.jpg" alt="Fashion Model 1">
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="images/gedung/gedung_2.jpg" alt="Fashion Model 2">
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="images/gedung/gedung_3.jpg" alt="Fashion Model 3">
+                        </div>
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                        </div>
+
+                    </div>
+                    <div class="floating-tags">
+                        <div class="tag">Limited Edition</div>
+                        <div class="tag">Handcrafted</div>
+                        <div class="tag">Premium Quality</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <section class="collections" id="collections">
+        <div class="section-header">
+            <h2 class="section-title">Koleksi Terbaru Kami</h2>
+            <p class="section-subtitle">temukan pilihan yang kami rekomendasikan</p>
+        </div>
+
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">All</button>
+            <button class="tab-btn" data-category="Suzuki">Suzuki</button>
+            <button class="tab-btn" data-category="Toyota">Toyota</button>
+            <button class="tab-btn" data-category="Wuling">Wuling</button>
+            <button class="tab-btn" data-category="Nissan">Nissan</button>
+            <button class="tab-btn" data-category="Honda">Honda</button>
+            <button class="tab-btn" data-category="Mitsubishi">Mitsubishi</button>
+        </div>
+
+        <div class="grid" id="collectionsGrid">
+
+            <div class="collection-card" data-category="Suzuki">
+                <div class="collection-thumbnail">
+                    <img src="images/Suzuki_Grand_Vitara_SUV_23jpg.jpg" alt="Suzuki Grand Vitara SUV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Suzuki</span>
+                    <h3 class="card-title">Suzuki Grand Vitara SUV</h3>
+                    <p class="card-subtitle">2023</p>
+                    <p class="card-price">Rp 370.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Suzuki">
+                <div class="collection-thumbnail">
+                    <img src="images/suzuki_apv_mpv_24.png" alt="Suzuki APV MPV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Suzuki</span>
+                    <h3 class="card-title">Suzuki APV MPV / Niaga</h3>
+                    <p class="card-subtitle">2004</p>
+                    <p class="card-price">Rp 220.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Suzuki">
+                <div class="collection-thumbnail">
+                    <img src="images/Suzuki_Ertiga_MPV_22.jpeg" alt="Suzuki Ertiga MPV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Suzuki</span>
+                    <h3 class="card-title">Suzuki Ertiga MPV</h3>
+                    <p class="card-subtitle">2024</p>
+                    <p class="card-price">Rp 270.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Suzuki">
+                <div class="collection-thumbnail">
+                    <img src="images/Suzuki_XL7_SUV_7-Seater_20.png" alt="Suzuki XL7 SUV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Suzuki</span>
+                    <h3 class="card-title">Suzuki XL7 SUV 7-Seater</h3>
+                    <p class="card-subtitle">2024</p>
+                    <p class="card-price">Rp 290.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Suzuki">
+                <div class="collection-thumbnail">
+                    <img src="images/Suzuki_Carry_Pick Up_Niaga_19.png" alt="Suzuki APV MPV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Suzuki</span>
+                    <h3 class="card-title">Suzuki Carry Pick Up Niaga</h3>
+                    <p class="card-subtitle">2019</p>
+                    <p class="card-price">Rp 170.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Suzuki">
+                <div class="collection-thumbnail">
+                    <img src="images/Suzuki_Baleno_Hatchback_22.png" alt="Suzuki APV MPV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Suzuki</span>
+                    <h3 class="card-title">Suzuki Baleno Hatchback</h3>
+                    <p class="card-subtitle">2022</p>
+                    <p class="card-price">Rp 270.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Suzuki">
+                <div class="collection-thumbnail">
+                    <img src="images/Suzuki_Ignis_City_Car_20.jpg" alt="Suzuki APV MPV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Suzuki</span>
+                    <h3 class="card-title">Suzuki Ignis City Car</h3>
+                    <p class="card-subtitle">2020</p>
+                    <p class="card-price">Rp 220.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Suzuki">
+                <div class="collection-thumbnail">
+                    <img src="images/Suzuki_Jimny_SUV_Off-Road_25.jpg" alt="Suzuki APV MPV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Suzuki</span>
+                    <h3 class="card-title">Suzuki Jimny SUV Off-Roadr</h3>
+                    <p class="card-subtitle">2019</p>
+                    <p class="card-price">Rp 460.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Suzuki">
+                <div class="collection-thumbnail">
+                    <img src="images/Suzuki_S-Presso_City_Car_22.png" alt="Suzuki APV MPV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Suzuki</span>
+                    <h3 class="card-title">Suzuki S-Presso City Car</h3>
+                    <p class="card-subtitle">2022</p>
+                    <p class="card-price">Rp 170.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Honda">
+                <div class="collection-thumbnail">
+                    <img src="images/honda/Honda Brio City Car.png" alt="Suzuki Grand Vitara SUV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Honda</span>
+                    <h3 class="card-title">Honda Brio City Car</h3>
+                    <p class="card-subtitle">2023</p>
+                    <p class="card-price">Rp 180.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Honda">
+                <div class="collection-thumbnail">
+                    <img src="images/honda/Honda HR-V SUV.png" alt="Suzuki APV MPV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Honda</span>
+                    <h3 class="card-title">Honda HR-V SUV</h3>
+                    <p class="card-subtitle">2022</p>
+                    <p class="card-price">Rp 375.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Honda">
+                <div class="collection-thumbnail">
+                    <img src="images/honda/Honda CR-V SUV.png" alt="Suzuki Ertiga MPV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Honda</span>
+                    <h3 class="card-title">Honda CR-V SUV</h3>
+                    <p class="card-subtitle">2023</p>
+                    <p class="card-price">Rp 739.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Honda">
+                <div class="collection-thumbnail">
+                    <img src="images/honda/Honda BR-V SUV 7-Seater.jpg" alt="Suzuki XL7 SUV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Honda</span>
+                    <h3 class="card-title">Honda BR-V SUV 7-Seater</h3>
+                    <p class="card-subtitle">2023</p>
+                    <p class="card-price">Rp 330.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Honda">
+                <div class="collection-thumbnail">
+                    <img src="images/honda/Honda Civic Sedan.png" alt="Suzuki APV MPV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Honda</span>
+                    <h3 class="card-title">Honda Civic Sedan</h3>
+                    <p class="card-subtitle">2023</p>
+                    <p class="card-price">Rp 600.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Honda">
+                <div class="collection-thumbnail">
+                    <img src="images/honda/Honda Accord Sedan.png" alt="Suzuki APVMPV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Honda</span>
+                    <h3 class="card-title">Honda Accord Sedan</h3>
+                    <p class="card-subtitle">2023</p>
+                    <p class="card-price">Rp 750.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Honda">
+                <div class="collection-thumbnail">
+                    <img src="images/honda/Honda City Sedan.png" alt="Honda CitySedan">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Honda</span>
+                    <h3 class="card-title">Honda City Sedan</h3>
+                    <p class="card-subtitle">2022</p>
+                    <p class="card-price">Rp 370.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Honda">
+                <div class="collection-thumbnail">
+                    <img src="images/honda/Honda WR-V SUV Compact.jpg" alt="Suzuki APV MPV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Honda</span>
+                    <h3 class="card-title">Honda WR-V SUV Compact</h3>
+                    <p class="card-subtitle">2023</p>
+                    <p class="card-price">Rp 290.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Honda">
+                <div class="collection-thumbnail">
+                    <img src="images/honda/Honda Mobilio MPV.png" alt="Suzuki APVMPV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Honda</span>
+                    <h3 class="card-title">Honda Mobilio MPV</h3>
+                    <p class="card-subtitle">2022</p>
+                    <p class="card-price">Rp 270.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Wuling">
+                <div class="collection-thumbnail">
+                    <img src="images/wuling/Wuling Almaz RS SUV.png" alt="Wuling Almaz RSSUV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">wuling</span>
+                    <h3 class="card-title">Wuling Almaz RS SUV</h3>
+                    <p class="card-subtitle">2021</p>
+                    <p class="card-price">Rp 420.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Wuling">
+                <div class="collection-thumbnail">
+                    <img src="images/wuling/Wuling Air EV Mobil Listrik.png" alt="Wuling Air EV Mobil Listri">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">wuling</span>
+                    <h3 class="card-title">Wuling Air EV Mobil Listri</h3>
+                    <p class="card-subtitle">2022</p>
+                    <p class="card-price">Rp 250.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Wuling">
+                <div class="collection-thumbnail">
+                    <img src="images/wuling/Wuling Confero S MPV.png" alt="Wuling Confero S MPV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">wuling</span>
+                    <h3 class="card-title">Wuling Confero S MPV</h3>
+                    <p class="card-subtitle">2021</p>
+                    <p class="card-price">Rp 210.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Wuling">
+                <div class="collection-thumbnail">
+                    <img src="images/wuling/Wuling Cortez MPV Premium.png" alt="Wuling Cortez MPV Premium">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">wuling</span>
+                    <h3 class="card-title">Wuling Cortez MPV Premium</h3>
+                    <p class="card-subtitle">2022</p>
+                    <p class="card-price">Rp 320.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Wuling">
+                <div class="collection-thumbnail">
+                    <img src="images/wuling/Wuling Formo Niaga.png" alt="Wuling Formo Niaga">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">wuling</span>
+                    <h3 class="card-title">Wuling Formo Niaga</h3>
+                    <p class="card-subtitle">2018</p>
+                    <p class="card-price">Rp 170.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Wuling">
+                <div class="collection-thumbnail">
+                    <img src="images/wuling/Wuling Binguo EV Mobil Listrik.png" alt="Suzuki APV MPV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">wuling</span>
+                    <h3 class="card-title">Wuling Binguo EV Mobil Listrik</h3>
+                    <p class="card-subtitle">2023</p>
+                    <p class="card-price">Rp 320.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Mitsubishi">
+                <div class="collection-thumbnail">
+                    <img src="images/mitsubishi/Mitsubishi Xpander MPV.png" alt="Mitsubishi Xpander MPV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">mitsubishi</span>
+                    <h3 class="card-title">Mitsubishi Xpander MPV</h3>
+                    <p class="card-subtitle">2023</p>
+                    <p class="card-price">Rp 280.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Mitsubishi">
+                <div class="collection-thumbnail">
+                    <img src="images/mitsubishi/Mitsubishi Xpander Cross SUV.png" alt="Mitsubishi Xpander Cross SUV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Mitsubishi</span>
+                    <h3 class="card-title">Mitsubishi Xpander Cross SUV</h3>
+                    <p class="card-subtitle">2023</p>
+                    <p class="card-price">Rp 320.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Mitsubishi">
+                <div class="collection-thumbnail">
+                    <img src="images/mitsubishi/Mitsubishi Pajero Sport SUV.png" alt="Mitsubishi Pajero Sport SUV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Mitsubishi</span>
+                    <h3 class="card-title">Mitsubishi Pajero Sport SUV</h3>
+                    <p class="card-subtitle">2022</p>
+                    <p class="card-price">Rp 560.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Mitsubishi">
+                <div class="collection-thumbnail">
+                    <img src="images/mitsubishi/Mitsubishi L300 Pick Up.png" alt="Mitsubishi L300 Pick Up">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Mitsubishi</span>
+                    <h3 class="card-title">Mitsubishi L300 Pick Up</h3>
+                    <p class="card-subtitle">2023</p>
+                    <p class="card-price">Rp 230.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Mitsubishi">
+                <div class="collection-thumbnail">
+                    <img src="images/mitsubishi/Mitsubishi Triton Pick Up Double Cabin.png"
+                        alt="Mitsubishi Triton Pick Up Double Cabin">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Mitsubishi</span>
+                    <h3 class="card-title">HMitsubishi Triton Pick Up Double Cabin</h3>
+                    <p class="card-subtitle">2022</p>
+                    <p class="card-price">Rp 420.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Mitsubishi">
+                <div class="collection-thumbnail">
+                    <img src="images/mitsubishi/Mitsubishi Outlander PHEV SUV Hybrid.png"
+                        alt="Mitsubishi Outlander PHEV SUV Hybrid">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Mitsubishi</span>
+                    <h3 class="card-title">Mitsubishi Outlander PHEV SUV Hybrid</h3>
+                    <p class="card-subtitle">2021</p>
+                    <p class="card-price">Rp 900.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Mitsubishi">
+                <div class="collection-thumbnail">
+                    <img src="images/mitsubishi/Mitsubishi Mirage City Car.png" alt="Mitsubishi Mirage City Car">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Mitsubishi</span>
+                    <h3 class="card-title">Mitsubishi Mirage City Car</h3>
+                    <p class="card-subtitle">2020</p>
+                    <p class="card-price">Rp 190.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Nissan">
+                <div class="collection-thumbnail">
+                    <img src="images/nissan/Nissan Livina MPV.png" alt="Nissan Livina MPV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">nissan</span>
+                    <h3 class="card-title">Nissan Livina MPVr</h3>
+                    <p class="card-subtitle">2019</p>
+                    <p class="card-price">Rp 320.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Nissan">
+                <div class="collection-thumbnail">
+                    <img src="images/nissan/Nissan Magnite SUV Compact.png" alt="Nissan Magnite SUV Compact">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">nissan</span>
+                    <h3 class="card-title">Nissan Magnite SUV Compact</h3>
+                    <p class="card-subtitle">2021</p>
+                    <p class="card-price">Rp 270.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Nissan">
+                <div class="collection-thumbnail">
+                    <img src="images/nissan/Nissan X-Trail SUV.png" alt="Nissan X-Trail SUV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">nissan</span>
+                    <h3 class="card-title">Nissan X-Trail SUV</h3>
+                    <p class="card-subtitle">2023</p>
+                    <p class="card-price">Rp 600.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Nissan">
+                <div class="collection-thumbnail">
+                    <img src="images/nissan/Nissan Navara Pick Up Double Cabin.png"
+                        alt="Nissan Navara Pick Up Double Cabin">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">nissan</span>
+                    <h3 class="card-title">Nissan Navara Pick Up Double Cabin</h3>
+                    <p class="card-subtitle">2021</p>
+                    <p class="card-price">Rp 520.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Nissan">
+                <div class="collection-thumbnail">
+                    <img src="images/nissan/Nissan Leaf Mobil Listrik.png" alt="Nissan Leaf Mobil Listrik ">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">nissan</span>
+                    <h3 class="card-title">Nissan Leaf Mobil Listrik</h3>
+                    <p class="card-subtitle">2021</p>
+                    <p class="card-price">Rp 700.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Nissan">
+                <div class="collection-thumbnail">
+                    <img src="images/nissan/Nissan March City Car.png" alt="Nissan March City Car">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">nissan</span>
+                    <h3 class="card-title">Nissan March City Car</h3>
+                    <p class="card-subtitle">2018</p>
+                    <p class="card-price">Rp 200.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Nissan">
+                <div class="collection-thumbnail">
+                    <img src="images/nissan/Nissan Juke Crossover.png" alt="Nissan Juke Crossover">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">nissan</span>
+                    <h3 class="card-title">Nissan Juke Crossover</h3>
+                    <p class="card-subtitle">2020</p>
+                    <p class="card-price">Rp 300.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Toyota">
+                <div class="collection-thumbnail">
+                    <img src="images/toyota/Toyota Veloz MPV Premium.png" alt="Toyota Veloz MPV Premium">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Toyota</span>
+                    <h3 class="card-title">Toyota Veloz MPV Premium</h3>
+                    <p class="card-subtitle">2021</p>
+                    <p class="card-price">Rp 300.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Toyota">
+                <div class="collection-thumbnail">
+                    <img src="images/toyota/Toyota Innova Zenix MPV Hybrid.png" alt="Toyota Innova Zenix MPV Hybrid">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Toyota</span>
+                    <h3 class="card-title">Toyota Innova Zenix MPV Hybridt</h3>
+                    <p class="card-subtitle">2022</p>
+                    <p class="card-price">Rp 470.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Toyota">
+                <div class="collection-thumbnail">
+                    <img src="images/nissan/Nissan X-Trail SUV.png" alt="Toyota Fortuner SUV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Toyota</span>
+                    <h3 class="card-title">Toyota Fortuner SUV</h3>
+                    <p class="card-subtitle">2022</p>
+                    <p class="card-price">Rp 600.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Toyota">
+                <div class="collection-thumbnail">
+                    <img src="images/toyota/Toyota Rush SUV.png" alt="Toyota Rush SUV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Toyota</span>
+                    <h3 class="card-title">Toyota Rush SUV</h3>
+                    <p class="card-subtitle">2021</p>
+                    <p class="card-price">Rp 290.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Toyota">
+                <div class="collection-thumbnail">
+                    <img src="images/toyota/Toyota Raize SUV Compact.png" alt="Toyota Raize SUV Compact ">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Toyota</span>
+                    <h3 class="card-title">Toyota Raize SUV Compact</h3>
+                    <p class="card-subtitle">2021</p>
+                    <p class="card-price">Rp 250.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Toyota">
+                <div class="collection-thumbnail">
+                    <img src="images/toyota/Toyota Yaris Hatchback.png" alt="Toyota Yaris Hatchbackr">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Toyota</span>
+                    <h3 class="card-title">Toyota Yaris Hatchbackr</h3>
+                    <p class="card-subtitle">2020</p>
+                    <p class="card-price">Rp 330.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Toyota">
+                <div class="collection-thumbnail">
+                    <img src="images/toyota/Toyota Agya City Car.png" alt="Toyota Agya City Car">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Toyota</span>
+                    <h3 class="card-title">Toyota Agya City Car</h3>
+                    <p class="card-subtitle">2023</p>
+                    <p class="card-price">Rp 180.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Toyota">
+                <div class="collection-thumbnail">
+                    <img src="images/toyota/Toyota Calya MPV LCGC.png" alt="Toyota Calya MPV LCGC">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Toyota</span>
+                    <h3 class="card-title">Toyota Calya MPV LCGC</h3>
+                    <p class="card-subtitle">2022</p>
+                    <p class="card-price">Rp 170.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Toyota">
+                <div class="collection-thumbnail">
+                    <img src="images/toyota/Toyota Hilux Pick Up.png" alt="Toyota Hilux Pick Up ">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Toyota</span>
+                    <h3 class="card-title">toyota Hilux Pick Upk</h3>
+                    <p class="card-subtitle">2021</p>
+                    <p class="card-price">Rp 370.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Toyota">
+                <div class="collection-thumbnail">
+                    <img src="images/toyota/Toyota Camry Sedan.png" alt="Toyota Camry Sedan">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Toyota</span>
+                    <h3 class="card-title">Toyota Camry Sedan</h3>
+                    <p class="card-subtitle">2021</p>
+                    <p class="card-price">Rp 700.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Toyota">
+                <div class="collection-thumbnail">
+                    <img src="images/toyota/Toyota Corolla Cross SUV.png" alt="Toyota Corolla Cross SUV">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Toyota</span>
+                    <h3 class="card-title">Toyota Corolla Cross SUV</h3>
+                    <p class="card-subtitle">2021</p>
+                    <p class="card-price">Rp 520.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Toyota">
+                <div class="collection-thumbnail">
+                    <img src="images/toyota/Toyota Altis Sedan.png" alt="Toyota Altis Sedan">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Toyota</span>
+                    <h3 class="card-title">Toyota Altis Sedan</h3>
+                    <p class="card-subtitle">2021</p>
+                    <p class="card-price">Rp 520.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Toyota">
+                <div class="collection-thumbnail">
+                    <img src="images/toyota/Toyota Alphard Vellfire MPV Mewah.png"
+                        alt="Toyota Alphard / Vellfire MPV Mewah">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Toyota</span>
+                    <h3 class="card-title">Toyota Alphard / Vellfire
+                        MPV Mewah</h3>
+                    <p class="card-subtitle">2021</p>
+                    <p class="card-price">Rp 1.400.000.000</p>
+                </div>
+            </div>
+
+            <div class="collection-card" data-category="Toyota">
+                <div class="collection-thumbnail">
+                    <img src="images/toyota/Toyota Land Cruiser SUV Premium.png" alt="Toyota Land Cruiser SUV Premium">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Toyota</span>
+                    <h3 class="card-title">Toyota Land Cruiser SUV Premium</h3>
+                    <p class="card-subtitle">2021</p>
+                    <p class="card-price">Rp 520.000.000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured" id="featured">
+        <div class="featured-container">
+            <div class="featured-hero">
+                <div class="featured-content">
+
+                    <span class="label">Changfor for the better</span>
+                    <h2>Mitsubishi MOTORS</h2>
+                    <p>Mitsubishi adalah produsen mobil asal Jepang yang dikenal dengan mobil SUV dan mobil sport yang
+                        bertenaga. Produk Mitsubishi meliputi berbagai jenis kendaraan, termasuk mobil penumpang, mobil
+                        komersial, dan mobil off-road. Perusahaan ini juga mengembangkan teknologi hybrid dan mobil
+                        listrik
+                        .</p>
+
+                    <div class="feature-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">👑</div>
+                            <div class="highlight-title">Premium Quality</div>
+                            <div class="highlight-desc">bersumber secara etis dengan produksi </div>
+                        </div>
+
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🚗</div>
+                            <div class="highlight-title">Material Berkelanjutan</div>
+                            <div class="highlight-desc">hanya bahan terbaik yang masuk kedalam koleksi kami</div>
+                        </div>
+
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✨</div>
+                            <div class="highlight-title">Best production</div>
+                            <div class="highlight-desc">setiap bagian dibuat dengan cermat oleh para profesional</div>
+                        </div>
+                    </div>
+
+                    <a href="#collections" class="feature-cta">Discover Our Craft</a>
+                </div>
+                <div class="featured-image-section">
+                    <div class="featured-image-grid">
+                        <div class="featured-img">
+                            <img src="images/NAV MITSUBISHI/1.jpeg" alt="Fashion Collection Showcase">
+                        </div>
+                        <div class="featured-img">
+                            <img src="images/NAV MITSUBISHI/5.jpeg" alt="Luxury Fashion Details">
+                        </div>
+                        <div class="featured-img">
+                            <img src="images/NAV MITSUBISHI/3.jpeg" alt="Artisan Craftsmanship">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials">
+                <div class="testimonials-header">
+                    <h3>apa yang pelanggan kami kataka</h3>
+                    <p class="section-subtitle">rivew nyata dari para penggemar mitsubishi</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <div class="testimonial-quote">
+                            Thank God, it meets expectations... Pajero is running smoothly again. The color matches and
+                            is not streaky at all. The location is also strategic on the main highway, so it's easy to
+                            find. Thank you Body Repire 🙏
+                        </div>
+
+                        <div class="testimonial-author">
+                            <div class="author-avatar">R</div>
+                            <div class="author-info">
+                                <h4>Rizky adi</h4>
+                                <p>Car Enthusiastr</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <div class="testimonial-quote">
+                            Been a customer for a long time...Satisfactory service, ready to pick up and deliver the
+                            vehicle to the location...Top Markotop.. Thank you Mr Very.. Success for Body Repair PT. Sun
+                            Star Motor - Pabelan 🙏🙏
+
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">M</div>
+                            <div class="author-info">
+                                <h4>Melisa Tan</h4>
+                                <p>Creative Professional</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <div class="testimonial-quote">
+                            100% satisfied, please for those who want body repair and painting at Mitsubhisi Sun Motor
+                            Group in Pabelan Kartasura Sukoharjo 👍👍
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">B</div>
+                            <div class="author-info">
+                                <h4>Budi Santoso</h4>
+                                <p>Entrepreneur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2 class="section-title">Hubungi Kami</h2>
+                <p class="section-subtitle">Kami Ingin Mendengar dari Anda</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Nama Depan</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Stevan" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Nama Belakang</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Ryan" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="stevanryan16@gmail.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Apa yang bisa kami bantu? </label>
+                            <input type="text" id="Apa yang bisa kami bantu? " name="subject"
+                                placeholder="Apa yang bisa kami bantu?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">bari tahu lebih lanjut dari pertanyaan anda... </label>
+                            <textarea id="message" name="bari tahu lebih lanjut dari pertanyaan anda... "
+                                placeholder="bari tahu lebih lanjut dari pertanyaan anda... " required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>Kunjungi Toko Cabang Kami</h3>
+                            <p>Jl. Raya Kartasura, Gumpang Lor, Pabelan, Kec. Kartasura, <br>
+                                Kabupaten Sukoharjo, Jawa Tengah 57169
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p>Main: <a href="tel:+62829334453">+62829334453</a><br>
+                                Support: <a href="tel:+62834535333">+62834535333</a><br>
+                                kantor pusat</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p>General: <a href="mitsub1shi@gmail.com">m1tsubishi@gmail.com</a><br>
+                                Support: <a href="m1tsubishi@gmail.com">m1tsubishi@gmail.com</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.0534622016293!2d110.8197636747332!3d-7.558632677028065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a590b6f5f4d5b%3A0xbedb6c23f6e5b5e2!2sMitsubishi%20Kartosura!5e0!3m2!1sen!2sid!4v1696227891234!5m2!1sen!2sid"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>MITSUBISHI</h3>
+                <p>Mendefinisikan ulang mode dengan desain berani, praktik berkelanjutan, dan kualitas tanpa kompromi.
+                    Bergabunglah dengan kami dalam menciptakan masa depan gaya.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">k</a>
+                    <a href="#" class="social-link">e</a>
+                    <a href="#" class="social-link">l</a>
+                    <a href="#" class="social-link">o</a>
+                    <a href="#" class="social-link">m</a>
+                    <a href="#" class="social-link">p</a>
+                    <a href="#" class="social-link">o</a>
+                    <a href="#" class="social-link">k</a>
+                    <a href="#" class="social-link">4</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Shop</h4>
+
+                <ul>
+                    <li><a href="#">mitsubishi</a></li>
+                    <li><a href="#">Suzuki</a></li>
+                    <li><a href="#">Toyota</a></li>
+                    <li><a href="#">wuling</a></li>
+                    <li><a href="#">nissan</a></li>
+                    <li><a href="#">Honda</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4><map name=""></map></h4>
+                <ul>
+                    <li><a href="#">solo raya</a></li>
+                    <li><a href="#">semarang</a></li>
+                    <li><a href="#">jogja</a></li>
+                    <li><a href="#">surabaya</a></li>
+                    <li><a href="#">jakarta</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© mitsubishi kartosura <a href="https://www.mitsubishi.com/en/" target="_blank" rel="nofollow"
+                    style="color: var(--accent);text-decoration: none;">Mitsubishi Kartosura</a></p>
+            <div class="payment-methods">
+                <div class="payment-icon">Stevan Ryan</div>
+                <div class="payment-icon">alvio</div>
+                <div class="payment-icon">yoga r</div>
+                <div class="payment-icon">apisss</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
